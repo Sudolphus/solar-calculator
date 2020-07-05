@@ -1,0 +1,42 @@
+body {
+  background-image: url(./assets/images/solarbackground.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: 100vh;
+  background: rgba(255, 255, 255, .5);
+  box-shadow: 0 15px 20px rgba(0, 0, 0, .5);
+  padding: 50px;
+  margin-top: 50px;
+  border: 3px solid blue;
+  text-align: center;
+}
+
+button {
+  display: inline-block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.formOutput > p {
+  display: inline-block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.errorOutput {
+  color: red;
+}
+
+#photoCred {
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 10px;
+  background: rgba(255, 255, 255, .5);
+}
