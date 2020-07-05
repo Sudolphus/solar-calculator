@@ -1,6 +1,7 @@
 /* eslint-disable no-undef */
 import { SolarConversionService } from './../src/solar-conversion-service';
 import { AgeExpectationService } from './../src/age-expectation-service';
+import { SolarExpectancy } from './../src/solar-expectancy';
 
 describe("solar calculator", ()=>{
   let userAge;
@@ -8,6 +9,7 @@ describe("solar calculator", ()=>{
   let ageService;
   let userGender;
   let userContinent;
+  let solarExpectancy;
 
   beforeEach(()=>{
     userAge = 10;
@@ -15,6 +17,7 @@ describe("solar calculator", ()=>{
     userContinent = 'asia';
     solarService = new SolarConversionService();
     ageService = new AgeExpectationService();
+    solarExpectancy = new SolarExpectancy(userAge, userGender, userContinent);
   });
 
   test('should calculate age in mercurian years', ()=>{
@@ -43,5 +46,9 @@ describe("solar calculator", ()=>{
 
   test('should calculate life expectancy based on gender and continent', ()=>{
     expect(ageService.ageExpectation(userGender, userContinent)).toBe(71);
+  });
+
+  test('should calculate life expectancy on each planet', ()=>{
+    expect(solarExpectancy.ageExpectancyArray()).toBe([71, 295.83, 114.5, 37.77, 5.99, 2.41, .43]);
   });
 });
