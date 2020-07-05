@@ -18,9 +18,11 @@ _This app will calculate your age and remaining life expectancy on a variety of 
 | **Program Calculates Age in Venusian Years** | User input: "10 years" | Age: "16.13 Venusian years" |
 | **Program Calculates Age in Martian Years** | User input: "10 years" | Age: "5.32 Martian years" |
 | **Program Calculates Age in Jovian Years** | User input: "10 years" | Age: ".84 Jovian years" |
+| **Program Calculates Age in Saturnian Years** | User input: "10 years" | Age: ".34 Saturn years" |
+| **Program Calculates Age in Neptunian Years** | User input: "10 years" | Age: ".06 Saturn years" |
 | **Program Calculates Life Expectancy Based on Continent and Gender** | User input: "Male, Asia" | Life Expectancy: 71 |
-| **Program Calculates Life Expectancy in various solar years** | User input: "Male, Asia" | Age: "[71, 295.83, 114.5, 37.77, 5.99] " |
-| **Program Calculates Left to Live for Each Planet** | User input: "Male, Asia" | Age: "[61, 254.16, 98.37, 32.45, 5.15" |
+| **Program Calculates Life Expectancy in various solar years** | User input: "Male, Asia" | Age: "[71, 295.83, 114.5, 37.77, 5.99, 2.41, .43]" |
+| **Program Calculates Left to Live for Each Planet** | User input: "Male, Asia" | Age: "[61, 254.16, 98.37, 32.45, 5.15, 2.07, .37]" |
 
 
 ## Setup/Installation Requirements

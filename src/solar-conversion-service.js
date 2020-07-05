@@ -10,6 +10,9 @@ export class SolarConversionService {
       break;
     case('mars'):
       conversionFactor = 1.88;
+      break;
+    case('jupiter'):
+      conversionFactor = 11.86;
     }
     return age/conversionFactor.toFixed(2);
   }
