@@ -1,0 +1,5 @@
+export class SolarConversionService {
+  toMercurianYears() {
+    
+  }
+}
