@@ -14,6 +14,9 @@ export class SolarConversionService {
     case('jupiter'):
       conversionFactor = 11.86;
       break;
+    case('uranus'):
+      conversionFactor = 84.02;
+      break;
     case('saturn'):
       conversionFactor = 29.5;
       break;
