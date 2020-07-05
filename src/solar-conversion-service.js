@@ -1,5 +1,5 @@
 export class SolarConversionService {
-  toMercurianYears() {
-    
+  toMercurianYears(age) {
+    return age/.24;
   }
 }
