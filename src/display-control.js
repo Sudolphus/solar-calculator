@@ -1,13 +1,21 @@
 import { SolarExpectancy } from './solar-expectancy';
+import './assets/images/Earth.jpeg';
+import './assets/images/Jupiter.jpeg';
+import './assets/images/Mars.jpeg';
+import './assets/images/Mercury.jpeg';
+import './assets/images/Neptune.jpeg';
+import './assets/images/Saturn.jpeg';
+import './assets/images/Uranus.jpeg';
+import './assets/images/Venus.jpeg';
 
 function buildFormHTML(planetArray, ageArray, expectationArray, leftToLiveArray) {
   let formHTML = '';
   for (let i = 0; i < ageArray.length; i++) {
-    formHTML += `<p>Your age in ${planetArray[i]} years is ${ageArray[i]} years!<br>`;
+    formHTML += `<p><img class='planetPic' src='./assets/images/${planetArray[i]}.jpeg'>Your age in ${planetArray[i]} years is ${ageArray[i]} years!<br>Your life expectancy in ${planetArray[i]} years is ${expectationArray[i]}! `;
     if (leftToLiveArray[0] >= 0) {
-      formHTML += `Your life expectancy in ${planetArray[i]} years is ${expectationArray[i]}! That means you have ${leftToLiveArray[i]} left to live!</p>`;
+      formHTML += `That means you have ${leftToLiveArray[i]} left to live!</p>`;
     } else {
-      formHTML += `Your life expectancy in ${planetArray[i]} years is ${expectationArray[i]}! That means you are ${leftToLiveArray[i]*-1} years over budget!</p>`;
+      formHTML += `That means you are ${leftToLiveArray[i]*-1} years over budget!</p>`;
     }
   }
   return formHTML;

@@ -32,6 +32,12 @@ button {
   color: red;
 }
 
+.planetPic {
+  height: 50px;
+  width: 50px;
+  float: left;
+}
+
 #photoCred {
   display: inline-block;
   position: absolute;
