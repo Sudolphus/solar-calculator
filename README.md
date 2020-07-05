@@ -1,19 +1,26 @@
-# _{Application Name}_
+# _Solar Calculator_
 
-#### _{Brief description of application}, {Date of current version}_
+## _Your Age Around the Solar System, 07.05.2020_
 
 #### By _**Micheal Hansen**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_This app will calculate your age and remaining life expectancy on a variety of planets in the solar system._
 
 ## Specifications
 
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
-| **Homepage** | User accesses localhost:5004 | Homepage with user input form |
-| **Program Gathers User Input** | User input: "10" | Output: "10" |
+| **Homepage** | User accesses Homepage | Homepage with user input form |
+| **Program Gathers User Input** | User input: "10 years" | Age: "10 years" |
+| **Program Calculates Age in Mercurian Years** | User input: "10 years" | Age: "41.67 Mercurian years" |
+| **Program Calculates Age in Venusian Years** | User input: "10 years" | Age: "16.13 Venusian years" |
+| **Program Calculates Age in Martian Years** | User input: "10 years" | Age: "5.32 Martian years" |
+| **Program Calculates Age in Jovian Years** | User input: "10 years" | Age: ".84 Jovian years" |
+| **Program Calculates Life Expectancy Based on Continent and Gender** | User input: "Male, Asia" | Life Expectancy: 71 |
+| **Program Calculates Life Expectancy in various solar years** | User input: "Male, Asia" | Age: "[71, 295.83, 114.5, 37.77, 5.99] " |
+| **Program Calculates Left to Live for Each Planet** | User input: "Male, Asia" | Age: "[61, 254.16, 98.37, 32.45, 5.15" |
 
 
 ## Setup/Installation Requirements
@@ -53,25 +60,14 @@ _Please reach out through my GitHub account._
 * _CSS (including Bootstrap)_
 * _JavaScript (including jQuery)_
 * _VSCode_
+* _Node.js (including webpack)_
 
 ### License
 
 Copyright (c) 2020 **_Micheal Hansen_**
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+_Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the  "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:_
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+_The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software._
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+_THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE._
