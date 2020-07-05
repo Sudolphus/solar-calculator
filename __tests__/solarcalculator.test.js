@@ -40,6 +40,10 @@ describe("solar calculator", ()=>{
     expect(solarService.yearConversion(userAge, 'saturn')).toBeCloseTo(.34);
   });
 
+  test('should calculate age in uranian years', ()=>{
+    expect(solarService.yearConversion(userAge, 'uranus')).toBeCloseTo(.12);
+  });
+
   test('should calculate age in neptunian years', ()=>{
     expect(solarService.yearConversion(userAge, 'neptune')).toBeCloseTo(.06);
   });
