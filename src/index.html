@@ -13,7 +13,7 @@
       <form>
         <p>To Determine Your Age and Life Expectancy, Please Answer some Questions: </p>
         <div class="row">
-          <div class="form-group col-md-6">
+          <div class="form-group col-md-4">
             <label for='genderSelect'>Select Your Gender: </label>
             <select name='genderSelect' class='form-control'>
               <option value="male">Male</option>
@@ -21,13 +21,28 @@
               <option value="other">Other</option>
             </select>
           </div>
-          <div class="form-group col-md-6">
+          <div class="form-group col-md-4">
+            <label for='continentSelect'>Select Your Continent: </label>
+            <select name='continentSelect' class='form-control'>
+              <option value="north america">North America</option>
+              <option value="south america">South America</option>
+              <option value="europe">Europe</option>
+              <option value="asia">Asia</option>
+              <option value="oceania">Oceania</option>
+              <option value="africa">Africa</option>
+            </select>
+          </div>
+          <div class="form-group col-md-4">
             <label for='ageInput'>Enter Your Age:</label>
             <input class="form-control" type="number" name='ageInput'>
           </div>
         </div>
         <button class="btn btn-info" type="submit">Calculate Your Age!</button>
       </form>
+
+      <ul id='formOutput'>
+
+      </ul>
     </div>
   </body>
 </html>
