@@ -4,7 +4,10 @@ export class SolarConversionService {
     switch (planet) {
     case ('mercury'):
       conversionFactor = .24;
+      break;
+    case ('venus'):
+      conversionFactor = .62;
     }
-    return age/conversionFactor;
+    return age/conversionFactor.toFixed(2);
   }
 }
