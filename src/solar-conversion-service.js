@@ -1,5 +1,10 @@
 export class SolarConversionService {
-  toMercurianYears(age) {
-    return age/.24;
+  yearConversion(age, planet) {
+    let conversionFactor;
+    switch (planet) {
+    case ('mercury'):
+      conversionFactor = .24;
+    }
+    return age/conversionFactor;
   }
 }

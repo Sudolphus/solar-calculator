@@ -11,6 +11,6 @@ describe("solar calculator", ()=>{
   });
 
   test('should calculate age in mercurian years', ()=>{
-    expect(solarService.toMercurianYears(userAge)).toBeCloseTo(41.67);
+    expect(solarService.yearConversion(userAge, 'mercury')).toBeCloseTo(41.67);
   });
 });
