@@ -1,13 +1,20 @@
 /* eslint-disable no-undef */
 import { SolarConversionService } from './../src/solar-conversion-service';
+import { AgeExpectationService } from './../src/age-expectation-service';
 
 describe("solar calculator", ()=>{
   let userAge;
   let solarService;
-  
+  let ageService;
+  let userGender;
+  let userContinent;
+
   beforeEach(()=>{
     userAge = 10;
+    userGender = 'male';
+    userContinent = 'asia';
     solarService = new SolarConversionService();
+    ageService = new AgeExpectationService();
   });
 
   test('should calculate age in mercurian years', ()=>{
@@ -32,5 +39,9 @@ describe("solar calculator", ()=>{
 
   test('should calculate age in neptunian years', ()=>{
     expect(solarService.yearConversion(userAge, 'neptune')).toBeCloseTo(.06);
+  });
+
+  test('should calculate life expectancy based on gender and continent', ()=>{
+    expect(ageService.ageExpectation(userGender, userContinent)).toBe(71);
   });
 });
