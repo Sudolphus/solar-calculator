@@ -17,6 +17,10 @@ $(document).ready(function() {
     const formOutput = $('#formOutput');
     formOutput.empty();
     const [userAge, userGender, userContinent] = gatherUserInput();
+    if (isNaN(userAge)) {
+      formOutput.html(`<li class='errorOutput'>Please Enter Your Age!</li>`);
+      return;
+    }
     displaySolarValues(formOutput, userAge, userGender, userContinent);
   });
 });
