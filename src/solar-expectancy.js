@@ -27,5 +27,9 @@ export class SolarExpectancy {
   }
 
   leftToLiveArray() {
+    const timeLeft = this.earthAgeExpectancy - this.userAge;
+    const timeLeftArray = this.ageConversionArray(timeLeft);
+    timeLeftArray.unshift(timeLeft);
+    return timeLeftArray;
   }
 }

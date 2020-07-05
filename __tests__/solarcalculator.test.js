@@ -66,7 +66,7 @@ describe("solar calculator", ()=>{
 
   test('should calculate time left to live on each planet', ()=>{
     const leftToLiveArray = solarExpectancy.leftToLiveArray();
-    const expectedArray = [61, 254.16, 98.37, 32.45, 5.15, 2.07, .73, .37];
+    const expectedArray = [61, 254.17, 98.39, 32.45, 5.14, 2.07, .73, .37];
     for (let i = 0; i < expectedArray.length; i++) {
       expect(parseFloat(leftToLiveArray[i])).toBeCloseTo(parseFloat(expectedArray[i]));
     }
