@@ -16,8 +16,14 @@ function buildFormHTML(planetArray, ageArray, expectationArray, leftToLiveArray)
   for (let i = 1; i < ageArray.length; i++) {
     formHTML += `<li>Your age in ${planetArray[i+1]} years is ${ageArray[i]} years!</li>`;
   }
-  for (let i = 0; i < expectationArray.length; i++) {
-    formHTML += `<li>Your life expectancy in ${planetArray[i]} years is ${expectationArray[i]}! That means you have ${leftToLiveArray[i]} left to live!`;
+  if (leftToLiveArray[0] >= 0) {
+    for (let i = 0; i < expectationArray.length; i++) {
+      formHTML += `<li>Your life expectancy in ${planetArray[i]} years is ${expectationArray[i]}! That means you have ${leftToLiveArray[i]} left to live!`;
+    }
+  } else {
+    for (let i = 0; i < expectationArray.length; i++) {
+      formHTML += `<li>Your life expectancy in ${planetArray[i]} years is ${expectationArray[i]}! That means you are ${leftToLiveArray[i]*-1} years over budget!`;
+    }
   }
   return formHTML;
 }
