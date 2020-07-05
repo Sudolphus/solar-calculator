@@ -17,6 +17,8 @@ export class SolarConversionService {
     case('saturn'):
       conversionFactor = 29.5;
       break;
+    case('neptune'):
+      conversionFactor = 164.79;
     }
     return age/conversionFactor.toFixed(2);
   }
