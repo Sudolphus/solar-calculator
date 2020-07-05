@@ -6,7 +6,7 @@ export class SolarExpectancy {
     this.ageExpectationService = new AgeExpectationService();
     this.solarConversionService = new SolarConversionService();
     this.userAge = userAge;
-    this.earthAgeExpectancy = this.ageExpectationService.ageExpectation(userGender, userContinent);
+    this.earthAgeExpectancy = parseFloat(this.ageExpectationService.ageExpectation(userGender, userContinent)).toFixed(2);
   }
   ageExpectancyArray() {
     const mercuryAgeExpectancy = parseFloat(this.solarConversionService.yearConversion(this.earthAgeExpectancy, 'mercury')).toFixed(2);
@@ -14,7 +14,8 @@ export class SolarExpectancy {
     const marsAgeExpectancy = parseFloat(this.solarConversionService.yearConversion(this.earthAgeExpectancy, 'mars')).toFixed(2);
     const jupiterAgeExpectancy = parseFloat(this.solarConversionService.yearConversion(this.earthAgeExpectancy, 'jupiter')).toFixed(2);
     const saturnAgeExpectancy = parseFloat(this.solarConversionService.yearConversion(this.earthAgeExpectancy, 'saturn')).toFixed(2);
+    const uranusAgeExpectancy = parseFloat(this.solarConversionService.yearConversion(this.earthAgeExpectancy, 'uranus')).toFixed(2);
     const neptuneAgeExpectancy = parseFloat(this.solarConversionService.yearConversion(this.earthAgeExpectancy, 'neptune')).toFixed(2);
-    return [this.earthAgeExpectancy, mercuryAgeExpectancy, venusAgeExpectancy, marsAgeExpectancy, jupiterAgeExpectancy, saturnAgeExpectancy, neptuneAgeExpectancy];
+    return [this.earthAgeExpectancy, mercuryAgeExpectancy, venusAgeExpectancy, marsAgeExpectancy, jupiterAgeExpectancy, saturnAgeExpectancy, uranusAgeExpectancy, neptuneAgeExpectancy];
   }
 }
