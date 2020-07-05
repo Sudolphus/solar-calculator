@@ -18,4 +18,7 @@ export class SolarExpectancy {
     const neptuneAgeExpectancy = parseFloat(this.solarConversionService.yearConversion(this.earthAgeExpectancy, 'neptune')).toFixed(2);
     return [this.earthAgeExpectancy, mercuryAgeExpectancy, venusAgeExpectancy, marsAgeExpectancy, jupiterAgeExpectancy, saturnAgeExpectancy, uranusAgeExpectancy, neptuneAgeExpectancy];
   }
+  leftToLiveArray() {
+    
+  }
 }
