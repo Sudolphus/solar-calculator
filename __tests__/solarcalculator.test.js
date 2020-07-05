@@ -54,12 +54,13 @@ describe("solar calculator", ()=>{
 
   test('should calculate life expectancy on each planet', ()=>{
     const expectancyArray = solarExpectancy.ageExpectancyArray();
-    expect(expectancyArray[0]).toBeCloseTo(71);
-    expect(expectancyArray[1]).toBeCloseTo(295.83);
-    expect(expectancyArray[2]).toBeCloseTo(114.52);
-    expect(expectancyArray[3]).toBeCloseTo(37.77);
-    expect(expectancyArray[4]).toBeCloseTo(5.99);
-    expect(expectancyArray[5]).toBeCloseTo(2.41);
-    expect(expectancyArray[6]).toBeCloseTo(.43);
+    expect(parseFloat(expectancyArray[0])).toBeCloseTo(71);
+    expect(parseFloat(expectancyArray[1])).toBeCloseTo(295.83);
+    expect(parseFloat(expectancyArray[2])).toBeCloseTo(114.52);
+    expect(parseFloat(expectancyArray[3])).toBeCloseTo(37.77);
+    expect(parseFloat(expectancyArray[4])).toBeCloseTo(5.99);
+    expect(parseFloat(expectancyArray[5])).toBeCloseTo(2.41);
+    expect(parseFloat(expectancyArray[6])).toBeCloseTo(.85);
+    expect(parseFloat(expectancyArray[7])).toBeCloseTo(.43);
   });
 });
