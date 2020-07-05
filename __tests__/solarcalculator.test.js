@@ -29,4 +29,8 @@ describe("solar calculator", ()=>{
   test('should calculate age in saturnian years', ()=>{
     expect(solarService.yearConversion(userAge, 'saturn')).toBeCloseTo(.34);
   });
+
+  test('should calculate age in neptunian years', ()=>{
+    expect(solarService.yearConversion(userAge, 'neptune')).toBeCloseTo(.06);
+  });
 });
