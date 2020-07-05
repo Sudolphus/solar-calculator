@@ -11,7 +11,7 @@ import './assets/images/Venus.jpeg';
 function buildFormHTML(planetArray, ageArray, expectationArray, leftToLiveArray) {
   let formHTML = '';
   for (let i = 0; i < ageArray.length; i++) {
-    formHTML += `<p><img class='planetPic' src='./assets/images/${planetArray[i]}.jpeg'>Your age in ${planetArray[i]} years is ${ageArray[i]} years!<br>Your life expectancy in ${planetArray[i]} years is ${expectationArray[i]}! `;
+    formHTML += `<p><img class='planetPic' src='./assets/images/${planetArray[i]}.jpeg' alt="A picture of ${planetArray[i]}">Your age in ${planetArray[i]} years is ${ageArray[i]} years!<br>Your life expectancy in ${planetArray[i]} years is ${expectationArray[i]}! `;
     if (leftToLiveArray[0] >= 0) {
       formHTML += `That means you have ${leftToLiveArray[i]} left to live!</p>`;
     } else {

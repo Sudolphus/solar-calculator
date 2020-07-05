@@ -38,16 +38,13 @@ Open by downloading:
 
 Open via Bash/GitBash:
 1. Clone this repository onto your computer:
-`git clone {PUT_REPO_HERE}`
-2. Navigate into the `{NAME_OF_DIRECTORY}` directory in Visual Studio Code or preferred text editor
+`git clone https://github.com/Sudolphus/solar-calculator`
+2. Navigate into the `solar-calculator` directory in Visual Studio Code or preferred text editor
 `code .`
 3. Get the necessary packages `npm install`.
 4. Compile the code `npm run build`.
 5. Open index.html in Chrome or preferred browser:
 `open dist/index.html`
-
-#### To see my live website go to {GH_PAGES_LINK_HERE}!
-
 
 ## Known Bugs
 
