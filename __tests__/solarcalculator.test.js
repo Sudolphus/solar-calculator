@@ -21,4 +21,8 @@ describe("solar calculator", ()=>{
   test('should calculate age in martian years', ()=>{
     expect(solarService.yearConversion(userAge, 'mars')).toBeCloseTo(5.32);
   });
+
+  test('should calculate age in jovian years', ()=>{
+    expect(solarService.yearConversion(userAge, 'jupiter')).toBeCloseTo(.84);
+  });
 });
